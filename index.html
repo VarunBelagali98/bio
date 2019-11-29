@@ -16,36 +16,59 @@
   }
 
   .jumbotron{
-    background-image: url("imgs/CloudedSun.jpg");
+    background-image: url("imgs/mountain_reflection.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .fakeimg {
+  width: 100px 100px;
+  /* padding: 3em 2em; */
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  /* background-color: lightgrey; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  position: relative;
+  display: block;
+  }
   </style>
 
+  <!-- <script src="jquery.js"></script> -->
+  <script>
+  $(function(){
+    $("#includeContent").load("common.html");
+  });
+  </script>
 </head>
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Welcome to Sanjeev's world</h1>
+  <h1>Welcome!!</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <!-- <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
+  </button> -->
+  <div class="container">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="interests.html">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gtk.html">Good to know</a>
+          </li>
+        </ul>
+      </div>
   </div>
 </nav>
 
@@ -62,9 +85,9 @@
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/SanjeevKV">Github</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="https://www.kaggle.com/sanjeevadiraj">Kaggle</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="https://www.linkedin.com/in/sanjeev-vadiraj/">LinkedIn</a>
         </li>
@@ -76,24 +99,31 @@
     </div>
     <div class="col-sm-8">
       <h2>PROJECTS</h2>
+
+      <h5>Head Gesture Synthesis (Feb 2019 - Present)</h5>
+      <div class="fakeimg">
+        <img src="imgs/head_gestures.png" class="img-fluid" alt="AlgorithmicTrading" style="height:200px; width:auto">
+      </div>
+      <p>Synthesize head gestures using variation in prosody</p>
+
       <h5>Algorithmic Trading (Dec 2017 - Present)</h5>
       <div class="fakeimg">
-        <<img src="imgs/AlgorithmicTrading.jpg" class="img-fluid" alt="AlgorithmicTrading">
+        <img src="imgs/AlgorithmicTrading.jpg" class="img-fluid" alt="AlgorithmicTrading" style="height:200px; width:auto">
       </div>
       <p>Based on historical market data, we automate the trading calls</p>
 
       <h5>Automatic Text Summarization (May 2016 - May 2017)</h5>
       <div class="fakeimg">
-        <<img src="imgs/Summarization.png" class="img-fluid" alt="Summarization flow-chart">
+        <img src="imgs/Summarization.png" class="img-fluid" alt="Summarization flow-chart", style="height:200px; width:auto">
       </div>
       <p>Generate abstractive summaries for a given text</p>
     </div>
   </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
+  <!-- <p>Footer</p> -->
+</div> -->
 
 </body>
 </html>
