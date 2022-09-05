@@ -34,7 +34,10 @@
             <a class="nav-link" href="publications.html">Publications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="files/Varun_Belagali_CV.pdf">CV</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="files/VarunBelagaliCV.pdf">CV</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="interests.html">Interests</a>
@@ -55,69 +58,71 @@
     <div class="col-sm-6">
       <h2>Varun Belagali</h2>
       <p>
-        I am a Research Associate working with Dr. Prasanta Kumar Ghosh at SPIRE Lab, Indian Institute of Science. 
+        I am a MS CS student at Stony Brook University starting Fall 2022.
+        Previously I was a Research Associate working with Dr. Prasanta Kumar Ghosh at SPIRE Lab, Indian Institute of Science. 
         I have completed my Bachelor's in Computer Science and Engineering from R V College of Engineering, Bangalore. 
-        My primary interest lies in the intersection of machine learning and computer vision. 
+        My primary interest lies in the intersection of Machine learning and Computer vision. 
         <br>
         Mail: varunbelagali98 [AT] gmail.com
-        <a href="https://www.linkedin.com/in/varun-belagali-17678218b/">[LinkedIn] </a>
+        <a href="https://www.linkedin.com/in/varun-belagali">[LinkedIn] </a>
         <a href="https://scholar.google.com/citations?user=tqEHnLUAAAAJ&hl=en&oi=ao">[Google scholar] </a>
       </p>
     </div>
       <hr class="d-sm-none">
     </div>
 
-  
+  <br>
+  <br>
+
   <div>
     </div class=row>
       <div class="col-sm-12">
-        <h2>Research works</h2>
+        <h2>Work Experience</h2>
           <h5>
-              Automatic glottis localization and segmentation in stroboscopic videos
+              Research Associate at Indian Institute of Science [Sep 2021 - Aug 2022]
           </h5>
         <div class=row>
-          <div class="col-sm-2">
-            <img src="imgs/glottis.png" width="100%" height="100%">
-          </div>
-          <div class="col-sm-10">
-            <p>
-              This project aims to quantify the minimal glottal opening area from stroboscopic video recording of patients suffering with voice disorders to assist Speech Language Pathologists in tracking the voice therapy.
-              We proposed a two step CNN model that outperformed the baseline by 24.64% in terms of localization accuracy and by 0.26 in terms of dice score. 
-              The model was trained using supervised methods. This work was published in Biomedical Optics Express 2020.
-            </p>
-          </div>
+            <ul>
+              <li>
+                Worked on image segmentation of glottal areas to help doctors track the progress of voice therapy. 
+                Designed  weakly supervised learning methods using box and image labels in PyTorch to overcome challenges of data collection.
+              </li>
+              <li>
+                Implemented air tissue boundary segmentation in MRI videos to aid the study of speech production. 
+                Analyzed the drawbacks of existing deep learning methods and designed the use of regional losses and metrics to improve segmentation accuracy by 28.5%.
+              </li>
+              <li>
+                Developed lip-synced video generation from synthetic speech in PyTorch using open source techniques like Wav2Lip.
+
+              </li>
+            </ul>
         </div>
-        <br>
         <h5>
-          Air tissue boundary segmentation in MRI videos
-        </h5>
-        <div class=row>
-          <div class="col-sm-2">
-            <img src="imgs/atb.jpg" width="100%" height="100%">
-          </div>
-          <div class="col-sm-10">
-            <p>
-              Carried out analysis on robustness of SegNet and 3D-CNN models. 
-              Proposed new evaluation metrics, an error detection and correction scheme for improved air-tissue boundary in real-time MRI video (Paper accepted at ICASSP 2022).
-              Proposed regional loss functions to make networks more robust in predicting segmentation in error prone regions (Paper accepted review at INTERSPEECH 2022).
-            </p>
-          </div>
-        </div>
-        <br>
+          Software Engineer at Citrix [July 2020 - Sep 2021]
+      </h5>
+    <div class=row>
+        <ul>
+          <li>
+            Developed traffic manager tool in C# to handle cloud services during regional outages which improved time to mitigate by 20%.
+          </li>
+          <li>
+            Analysed the usage of Azure by Citrix Cloud services and optimized the provision of VMs, Cosmosdb, etc. to reduce the cost by 65%.
+          </li>
+        </ul>
+    </div>
         <h5>
-          Lip synced video synthesis from audio
-        </h5>
-        <div class=row>
-          <div class="col-sm-2">
-            <img src="imgs/syspin.png" width="100%" height="100%">
-          </div>
-          <div class="col-sm-10">
-            <p>
-              Working on real and animated lip synced video generation from audio for nine Indian languages.
-              This project is part of <a href="https://syspin.iisc.ac.in"> SYSPIN </a> initiative which aims to collect speech and text data for nine Indian langauges to bring voice AI to marginalised populations in India.
-            </p>
-          </div>
-        </div>
+          Research Intern at Indian Institute of Science [June 2018 - May 2020]
+      </h5>
+    <div class=row>
+        <ul>
+          <li>
+            Designed CNN model in Keras and knowledge-based data augmentation method in Matlab to solve glottis segmentation task in strobosopic videos and achieved an improvement of 0.26 in Dice score.
+          </li>
+          <li>
+            Created data annotation pipeline in Python for doctors to collect and label the stroboscopic videos of 18 patients.
+          </li>
+        </ul>
+    </div>
       </div>
     </div>
   </div>
